@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+    <head> <!-- Техническая информация о документе -->
+        <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+        <title>Lab6</title> <!-- Задаем заголовок документа -->
+        <style>
+            .fig {
+                text-align: center;
+            }
+            .name_input {
+                margin-top: 30px;
+                padding-left: 50px;
+                padding-right: 30px;
+                display: inline-block;
+                width: 60px;
+            }
+            .input {
+                margin-left: 100px;
+            }
+            .check {
+                width:200px; 
+                height:100px; 
+                overflow: auto; 
+                border:solid 1px #C3E4FE;
+                display: inline-block;
+            }
+            .names {
+                margin-left: 50px;
+                color: grey;
+                font-style: italic;
+            }
+            .button {
+                margin-left: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="fig">Анкета студента 3 курса ИУ5</h1>
+        </header>
+        <main>
+            <h2> Зачем проводится этот опрос:</h2>
+            <ul>
+                <li>Познакомиться</li>
+                <li>Узнать проблемные места</li>
+                <li>Поздравить преподавателей с Новым Годом</li>
+              </ul>
+            <div class="form">
+                <p class="name_input"> Имя: </p>
+                <input class="input" type="text" size="40">
+            </div>
+            <div class="form">
+                <p class="name_input"> Фамилия: </p>
+                <input class="input" type="text" size="40">
+            </div>
+            <div class="form">
+                <p class="name_input"> Пол: </p>
+                <input class="input" name="sex" type="radio" value="male" checked>  Мужчина
+                <input class="input" name="sex" type="radio" value="female"> Женщина
+            </div>
+            <div class="form">
+                <p class="name_input"> Год Рождения: </p>
+                <select class="input" name="years[]">
+                    <option selected>Выберите год рождения</option>
+                    <option value="1998">1998</option>
+                    <option value="1999">1999</option>
+                    <option value="2000">2000</option>
+                    <option value="2001">2001</option>
+                </select>
+            </div>
+            <div class="form">
+                <p class="name_input"> Сложные предметы: </p>
+                <div class="check input">
+                    <input type="checkbox" />РИП <br>
+                    <input type="checkbox" />ОС <br>
+                    <input type="checkbox" />ТУ<br>
+                    <input type="checkbox" />СТ <br>
+                    <input type="checkbox" />ОАД <br>
+                    <input type="checkbox" />ВСАСОИУ <br>
+                    <input type="checkbox" />ФИЗ-РА <br>
+                    <input type="checkbox" />АНГЛ <br>
+                </div>
+            </div>
+            <div class="form">
+                <p class="name_input"> Пожелание преподавателям: </p>
+                <textarea class="input" rows="10" cols="45" name="text"></textarea>
+            </div>
+            <div class="form">
+                <p class="names"> P.S. ФИО преподавателей: </p>
+                <dl class="names">
+                    <dt>Гапанюк Юрий Евгеньевич</dt>
+                      <dd>преподаватель дисциплины "Разработка интернет-приложений"</dd>
+                    <dt>Масленников Константин Юрьевич</dt>
+                      <dd>преподаватель дисциплины "Оперативнй анализ данных"</dd>
+                    <dt>Спиридонов Сергей Борисович</dt>
+                    <dd>преподаватель дисциплины "Вычислительные средства АСОИУ"</dd>
+                    <dt>Семкин Петр Степанович</dt>
+                    <dd>преподаватель дисциплины "Операционные системы"</dd>
+                    <dt>Галкин Валерий Александрочи</dt>
+                      <dd>преподаватель дисциплины "Сети и телекоммуникации"</dd>
+                    <dt>Лукьянов Вадим Викторович</dt>
+                    <dd>преподаватель дисциплины "Теория управления"</dd>
+                </dl>
+            </div>
+            <button class="button"><img src="icons8-whale-48.png" alt="Дельфинчик" 
+                style="vertical-align: middle"> Дельфинчик</button>
+            <p><input type="submit" value="Отправить"></p>
+
+        </main>
+    </body>
+</html>
