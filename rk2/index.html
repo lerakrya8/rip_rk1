@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- Объявление формата документа -->
+<html>
+    <head> <!-- Техническая информация о документе -->
+        <meta charset="UTF-8"> <!-- Определяем кодировку символов документа -->
+        <title>Lab6</title> <!-- Задаем заголовок документа -->
+        <style type="text/css">
+            BODY {
+                margin-left: 300px;
+                margin-right: 300px;
+             background: white; /* Цвет фона веб-страницы */
+            }
+            h2 {
+                text-align: left;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(68, 66, 65);
+                /* width: 100%; */
+            }
+            TABLE {
+                border-collapse: collapse; /* Убираем двойные линии между ячейками */
+                border: 2px solid white; /* Прячем рамку вокруг таблицы */
+                font-size: 20px;
+                height: 500px;
+            }
+            th {
+                width: 400px;
+                /* text-align: center; */
+            }
+            TD, TH {
+                padding: 3px; /* Поля вокруг содержимого таблицы */
+                border: 1px solid maroon; /* Параметры рамки */
+                text-align: center; /* Выравнивание по левому краю */
+            }
+
+            .lux tr:nth-child(odd) {
+                background: #a52a2a;
+                color: white; 
+            }
+            .lux tr:nth-child(even) { 
+                background: #FFE4C4;
+                color: black;
+            }
+            .size {
+                margin-top: 50px;
+                font-size: 2em;
+            }
+            .orc {
+                color: #a52a2a;
+                font-size: 25px;
+                font-weight: 700;
+                font-style: italic;
+            }
+           </style>
+    </head>
+    <body>
+        <header>
+            <h2 class="fig">Гусева Валерия ИУ5-53Б РК2</h2>
+            <h1>Расписание концертного зала</h1>
+        </header>
+        <main>
+            <article>
+                <table class="lux">
+                    <tr>
+                        <th></th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th>19:00</th>
+                    </tr>
+                    <tr>
+                        <td>Понедельник</td><td>Владимир Тарнопольский</td><td>Макс Рихтер</td><td>Фарадж Караев</td><td>Филип Гласс</td><td>Александр Вустин</td>
+                    </tr>
+                    <tr>
+                        <td>Вторник</td><td>28</td><td>Александр Вустин</td><td>Владимир Тарнопольский</td><td>Юрий Воронцов</td><td>Ханс Циммер</td>
+                    </tr>
+                    <tr>
+                        <td>Среда</td><td>Фарадж Караев</td><td>Виктор Екимовский</td><td>Марк Пекарский</td><td>Алла Павлова</td><td>Юрий Воронцов</td>
+                    </tr>
+                    <tr>
+                        <td>Четверг</td><td>Александр Вустин</td><td>Марк Пекарский</td><td>Джованни Марради</td><td>Татьяна Сергеева</td><td>Макс Рихтер</td>
+                    </tr>
+                    <tr>
+                        <td>Пятница</td><td>Юрий Каспаров</td><td>Владимир Тарнопольский</td><td>Юрий Каспаров</td><td>Татьяна Сергеева</td><td>Алла Павлова</td>
+                    </tr>
+                    <tr>
+                        <td>Суббота</td><td>Татьяна Сергеева</td><td>Владимир Тарнопольский</td><td>Филип Гласс</td><td>Макс Рихтер</td><td>Филип Гласс</td>
+                    </tr>
+                    <tr>
+                        <td>Воскресенье</td><td>Алла Павлова</td><td>Татьяна Сергеева</td><td>Юрий Каспаров</td><td>Джованни Марради</td><td>Филип Гласс</td>
+                    </tr>
+                </table>
+
+                <h1 class="size">Приглашенные оркестры</h1>
+                <ul class="orc">
+                    <li>Академический симфонический оркестр Московской филармонии</li>
+                    <li>Большой симфонический оркестр имени П. И. Чайковского</li>
+                    <li>Симфонический оркестр Большого театра</li>
+                    <li>Глобалис</li>
+                    <li>Российский государственный симфонический оркестр кинематографии</li>
+                    <li>Персимфанс</li>
+                </ul>
+            </article>
+        </main>
+    </body>
+</html>
